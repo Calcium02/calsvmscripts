@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+curl -O https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz
+tar -xf Python-3.8.1.tar.xz
+cd Python-3.8.1
+./configure --enable-optimizations --enable-loadable-sqlite-extensions
+make -j 1
+sudo make altinstall
+python3 -m pip install discord.py
+echo "use python3.8 -m venv ~/bot to setup a virtual env and source ~/bot/bin/activate"
+echo "incase discord.py didn't correctly install run python3 -m pip install discord.py"

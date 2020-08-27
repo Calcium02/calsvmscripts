@@ -1,0 +1,8 @@
+
+#!/bin/bin
+
+echo 'Who do you want to be the new owner of the system?'
+
+read who
+
+chown -vR $who /

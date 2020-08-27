@@ -1,0 +1,8 @@
+
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
+apt-get install -y nodejs
+npm install pm2 -g
+apt-get install zip unzip
+echo "use pm2 start {file.py} to boot it up"
+echo "use pm2 startup after this and paste the code it says into the terminal"
+exit
